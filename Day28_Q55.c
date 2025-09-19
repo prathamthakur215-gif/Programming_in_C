@@ -17,7 +17,9 @@ Output 2:
 
 int main() {
     int n, i, j, isPrime;
+    printf("Enter value of n: ");
     scanf("%d", &n);
+
 
     for (i = 2; i <= n; i++) {   // start from 2, since 1 is not prime
         isPrime = 1;             // assume i is prime

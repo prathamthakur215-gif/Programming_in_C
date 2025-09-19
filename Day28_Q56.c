@@ -19,6 +19,7 @@ Output 2:
 
 int main() {
     int n, i;
+    printf("Enter value of n: ");
     scanf("%d", &n);   // read size of array
 
     int arr[n];        // declare array of size n
