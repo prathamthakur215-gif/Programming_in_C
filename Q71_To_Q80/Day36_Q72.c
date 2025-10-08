@@ -1,4 +1,4 @@
-/*Q74: Find the transpose of a matrix.
+/*Q72: Find the sum of all elements in a matrix.
 
 /*
 Sample Test Cases:
@@ -7,46 +7,32 @@ Input 1:
 1 2 3
 4 5 6
 Output 1:
-1 4
-2 5
-3 6
+21
 
 */
 #include <stdio.h>
 
 int main() {
     int rows, cols;
-    
-    // Input for matrix size
+
+    // Input matrix size
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
 
     int matrix[rows][cols];
-    int transpose[cols][rows];
+    int sum = 0;
 
-    // Input for matrix elements
+    // Input matrix elements
     printf("Enter the elements of the matrix:\n");
     for(int i = 0; i < rows; i++) {
         for(int j = 0; j < cols; j++) {
             scanf("%d", &matrix[i][j]);
+            sum += matrix[i][j]; // adding element to sum
         }
     }
 
-    // Finding transpose
-    for(int i = 0; i < rows; i++) {
-        for(int j = 0; j < cols; j++) {
-            transpose[j][i] = matrix[i][j];
-        }
-    }
-
-    // Printing transpose
-    printf("Transpose of the matrix:\n");
-    for(int i = 0; i < cols; i++) {
-        for(int j = 0; j < rows; j++) {
-            printf("%d ", transpose[i][j]);
-        }
-        printf("\n");
-    }
+    // Printing sum of all elements
+    printf("Sum of all elements: %d\n", sum);
 
     return 0;
 }
