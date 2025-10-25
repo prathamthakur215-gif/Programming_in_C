@@ -1,5 +1,5 @@
-/* Q76: Check if a matrix is symmetric.
-
+/*
+Q76: Check if a matrix is symmetric.
 
 Sample Test Cases:
 Input 1:
@@ -15,8 +15,8 @@ Input 2:
 2 1
 Output 2:
 False
-
 */
+
 #include <stdio.h>
 
 int main() {
