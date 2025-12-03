@@ -1,6 +1,6 @@
 Welcome to my 100 Days of Code Challenge! 🎯
 The goal is to code every day for 100 days, share progress, and stay consistent.
-🎯 Goals for This Challenge
+🎯 Goals for This Challenge.
 
 Strengthen problem-solving in C
 
